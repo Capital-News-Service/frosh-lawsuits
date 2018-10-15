@@ -24,19 +24,19 @@
 /* Headline styles */
 
 #headline-container {
-  width:80%;
+  width:95%;
   min-width:300px;
 }
 
 .headline {
   font-family: "Poppins", sans-serif;
-  font-size:24px;
+  font-size:2em;
   font-weight:700;
 }
 
 .chatter {
   font-family: "PT Serif", serif;
-  font-size:14px;
+  font-size:1.2em;
 }
 
 /* Social icons */
@@ -72,9 +72,12 @@ body {
 }
 
 .topicboxes {
-	width:45px;
+	width:75px;
 }
 
+.boxwrap {
+	padding-bottom: 25px;
+}
 .box {
 	background-color: #DAE4E8;
 	width:350px;
@@ -91,39 +94,43 @@ body {
 img {
 	margin:auto;
 	padding-bottom:10px;
+	width:75px;
 }
 
 .topic {
 	font-family: Perpetua Titling MT;
-	font-size:36pt;
+	font-weight:500;
+	font-size:24pt;
 	text-align:center;
 	padding-top:10px;
+	padding-left:5px;
+	padding-right:5px;
 
 }
 
 .date {
-	font-family: Myriad Pro;
-	font-size: 20pt;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13pt;
 	text-align:center;
 	padding-bottom:15px;
+	font-weight:light 300;
 }
 
 .plaintiff {
 	text-align:center;
 	font-family:Myriad Pro;
 	font-size:18pt;
+	padding-top:5px;
 }
 
 .description {
 	text-align:center;
 	font-family: PT Sans, italic;
-	font-size:18pt;
+	font-size:15pt;
 
 }
-
-.borderrow {
-	border-bottom: 20px red;
-
+.border-bottom {
+	color: black;
 }
 
 .up-down {
@@ -134,4 +141,46 @@ img {
 
 .show-hide {
   display:none;
+}
+
+.statesection {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#contraception {
+	font-size:28pt;
+}
+
+
+
+/*MEDIA Q'S HERE*/
+@media (max-width: 576px) {
+	.box {
+		width:300px;
+	}
+
+	.topic {
+		font-size:28pt;
+	}
+
+	.date {
+		font-size:15pt;
+	}
+
+	.description {
+		font-size: 12pt;
+	}
+	.plaintiff {
+		font-size: 15pt;
+	}
+
+	img {
+		width:50px;
+	}
+
+	#contraception {
+		font-size:24pt;
+	}
+
 }
